@@ -1,0 +1,45 @@
+
+    
+    <html>
+    
+    <head>
+    
+        <title>LOGIN</title>
+    
+        <link rel="stylesheet" type="text/css" href="stayl20.css">
+    
+    </head>
+    
+    <body>
+    
+         <form action="login.php" method="post">
+    
+            <h2>LOGIN</h2>
+    
+            <?php if (isset($_GET['error'])) { ?>
+    
+                <p class="error"><?php echo $_GET['error']; ?></p>
+    
+            <?php } ?>
+    
+            <label>User Name</label>
+    
+            <input type="text" name="uname" placeholder="User Name"><br>
+    
+    
+            <label>pasword</label>
+    
+            <input type="text" name="uname" placeholder="pasword"><br>
+
+            <label>date de nessonse</label>
+    
+            <input type="text" name="uname" placeholder="date de ness"><br>
+    
+
+            <button type="submit">Login</button>
+    
+         </form>
+    
+    </body>
+    
+    </html>
